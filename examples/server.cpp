@@ -14,57 +14,189 @@
  * limitations under the License.
  */
 
+#include <unordered_map>
 #include "network.h"
 #include "mt.h"
 #include "core.h"
 #include "helpers.h"
+#include "journey.h"
 
 namespace server {
 
+using namespace std;
 using namespace mt;
 using namespace synca;
 using namespace synca::net;
 
+struct ChatUser;
+
+
+std::mutex mutex;
+std::unordered_map<Socket*, ChatUser> chatMap;
+
+
+enum class State{
+    NO_NAME = 0,
+    WITH_NAME = 1
+};
+
+struct ChatUser{
+    std::weak_ptr<Socket> socket;
+    State state;
+    std::string name;
+    
+    ChatUser(){
+        state = State::NO_NAME;
+    }
+};
+
+struct TimeoutSocketTag;
+struct TimeoutSocket {
+    TimeoutSocket(int ms, const Handler& inCallback):
+        timer(service<TimeoutSocketTag>(), boost::posix_time::milliseconds(ms)),
+        callback(inCallback)
+    {
+        Goer goer = journey().goer();
+        timer.async_wait([this, goer](const boost::system::error_code& error) mutable {
+            if (!error){
+                if(callback){
+                    callback();
+                }
+                goer.timedout();
+            }
+        });
+    }
+    
+    ~TimeoutSocket(){
+        timer.cancel_one();
+        handleEvents();
+    }
+    
+private:
+    boost::asio::deadline_timer timer;
+    Handler callback;
+};
+
 void serve(int port)
 {
-    ThreadPool net(4, "net");
 
+    ThreadPool net(4, "net");
+    
     service<NetworkTag>().attach(net);
+    service<TimeoutSocketTag>().attach(net);
     scheduler<DefaultTag>().attach(net);
     
-    
     Handler handler = [port] {
+        enableEvents();
+    
+        // создаем приемник соединений
         Acceptor acceptor(port);
-        while (true)
-        {
-            JLOG("accepting");
-            acceptor.goAccept([](Socket& socket) {
+        
+        // ожидаем подключения
+        while (true){
+            SocketHandler socketHandler = [](const std::weak_ptr<Socket>& socket) {
+                Socket* socketPtr = nullptr;
+                if (socket.expired() == false) {
+                    socketPtr = socket.lock().get();
+                }
+                
                 JLOG("accepted");
-                while (true)
-                {
-                    socket.write("Enter name:\n");
-                    
-                    // принимаем 10 байт
-                    //                    const size_t size = 10;
-                    //                    Buffer str(size, 0);
-                    //                    socket.read(str);
-                    //                    JLOG("read: " << str);
-                    
-                    // читаем пока не завершится или не закончится буффер
-                    Buffer str(1024, 0);
-                    const char* stop = "\n";
-                    socket.readUntil(str, Buffer(stop));
-                    
-                    size_t index = str.find("\r\n", 0);
-                    if (index != std::string::npos){
-                        str.replace(index, 2, "\0\0");
+                // работаем с сокетом в цикле
+                while (true) {
+                    if (socket.expired()) {
+                        break;
                     }
                     
-                    str += " world!\n";
-                    socket.write(str);
-                    JLOG("written: " << str);
+                    // нет юзера - создастся автоматически
+                    mutex.lock();
+                    ChatUser& curUser = chatMap[socketPtr];
+                    mutex.unlock();
+                    
+                    // имя юзера
+                    if(curUser.state == State::NO_NAME){
+                        socket.lock()->write("Enter name:\n");
+                        
+                        Buffer userName(64, 0);
+                        socketPtr->readUntil(userName, Buffer("\n"));
+                        
+                        size_t index = userName.find("\r\n", 0);
+                        if (index != std::string::npos){
+                            userName.replace(index, 2, "\0\0");
+                        }
+                        
+                        curUser.name = userName;
+                        curUser.state = State::WITH_NAME;
+                        curUser.socket = socket;
+                    }
+                    
+                    socket.lock()->write("Enter message: ");
+                    
+                    // читаем пока не завершится или не закончится буффер
+                    Buffer message(64, 0);
+                    {
+                        string userName = curUser.name;
+                    
+                        TimeoutSocket t(150000, [userName, socketPtr](){
+                            // закрываем сокет по таймауту
+                            socketPtr->close();
+                        
+                            // Удаляем из мапы
+                            mutex.lock();
+                            chatMap.erase(socketPtr);
+                            mutex.unlock();
+                            
+                            // передаем всем юзерам сообщение
+                            mutex.lock();
+                            string resultText = "\t<" + userName + "> left chat by timeout\n";
+                            for (const std::pair<Socket*, ChatUser>& user: chatMap){
+                                if (user.second.socket.expired() == false) {
+                                    user.second.socket.lock()->write("");
+                                }
+                            }
+                            mutex.unlock();
+                        });
+                        socketPtr->readUntil(message, Buffer("\n"));
+                    }
+                    
+                    size_t index = message.find("\r\n", 0);
+                    if (index != std::string::npos){
+                        message.replace(index, 2, "\0\0");
+                    }
+                    
+                    // выход из чата
+                    std::string resultText;
+                    if (message.find("exit") != std::string::npos) {
+                        resultText = "\t<" + curUser.name + "> left chat\n";
+                        socketPtr->close();
+                        break;
+                    }else{
+                        resultText = "\t<" + curUser.name + ">:" + message + "\n";
+                    }
+                    
+                    // передаем всем юзерам сообщение
+                    mutex.lock();
+                    for (const std::pair<Socket*, ChatUser>& user: chatMap){
+                        if (user.second.socket.expired() == false) {
+                            user.second.socket.lock()->write(resultText);
+                        }
+                    }
+                    mutex.unlock();
+                    
+                    // обрываем
+                    if (socket.expired()) {
+                        break;
+                    }
                 }
-            });
+                
+                // TODO:
+                // Соединение закрылось??
+                mutex.lock();
+                chatMap.erase(socketPtr);
+                mutex.unlock();
+            };
+            
+            // Работа непосредственно с открытым соединением
+            acceptor.goAccept(socketHandler);
         }
     };
     go(handler, net);

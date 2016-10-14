@@ -84,7 +84,6 @@ void Socket::read(Buffer& buffer) {
     CallbackIoHandler callback = [&buffer, this](IoHandler proceed) {
         // коллбек завершения чтения
         BufferIoHandler handler = bufferIoHandler(buffer, std::move(proceed));
-        // TODO:
         // запуск чтения из сокета
         boost::asio::async_read(_socket,
                                 boost::asio::buffer(&buffer[0], buffer.size()),
@@ -97,7 +96,6 @@ void Socket::partialRead(Buffer& buffer) {
     CallbackIoHandler callback = [&buffer, this](IoHandler proceed) {
         // коллбек завершения чтения
         BufferIoHandler handler = bufferIoHandler(buffer, std::move(proceed));
-        // TODO:
         // запуск чтения из сокета
         _socket.async_read_some(boost::asio::buffer(&buffer[0], buffer.size()),
                                 handler);
@@ -178,13 +176,11 @@ Socket Acceptor::accept() {
 }
 
 void Acceptor::goAccept(SocketHandler handler) {
-    std::unique_ptr<Socket> holder(new Socket(accept()));
-    Socket* socket = holder.get();
-    go([socket, handler] {
-        std::unique_ptr<Socket> goHolder(socket);
-        handler(*goHolder);
+    std::shared_ptr<Socket> holder(new Socket(accept()));
+    go([holder, handler] {
+        std::weak_ptr<Socket> socketWeak = holder;
+        handler(socketWeak);
     });
-    holder.release();
 }
 
 Resolver::Resolver() :

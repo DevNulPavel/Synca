@@ -54,7 +54,7 @@ private:
 };
 
 // Обертка над приемщиком соединений
-typedef std::function<void(Socket&)> SocketHandler;
+typedef std::function<void(const std::weak_ptr<Socket>&)> SocketHandler;
 struct Acceptor {
     explicit Acceptor(int port);
 
