@@ -22,18 +22,20 @@
 
 namespace mt {
 
+// Переменные, индивидуальные для каждого потока
 TLS int t_number = 0;
 TLS const char* t_name = "main";
 
+// геттеры для этих переменных
 const char* name() {
     return t_name;
 }
-
 int number() {
     return t_number;
 }
 
-std::thread createThread(Handler handler, int number, const char* name) {
+// Функция создания потока и выполнение задачи внутри этого потока
+std::thread createThread(const Handler& handler, int number, const char* name) {
     return std::thread([handler, number, name] {
         t_number = number + 1;
         t_name = name;
@@ -49,59 +51,78 @@ std::thread createThread(Handler handler, int number, const char* name) {
     });
 }
 
-ThreadPool::ThreadPool(size_t threadCount, const char* name) : tpName(name) {
-    work.reset(new boost::asio::io_service::work(service));
-    threads.reserve(threadCount);
-    for (size_t i = 0; i < threadCount; ++ i)
-        threads.emplace_back(createThread([this] {
-        while (true) {
-            service.run();
-            std::unique_lock<std::mutex> lock(mutex);
-            if (toStop)
-                break;
-            if (!work) {
-                work.reset(new boost::asio::io_service::work(service));
-                service.reset();
-                lock.unlock();
-                cond.notify_all();
+ThreadPool::ThreadPool(size_t threadCount, const char* name) :
+    _tpName(name),
+    _toStop(false) {
+    
+    _work.reset(new boost::asio::io_service::work(_service));
+    _threads.reserve(threadCount);
+    
+    for (size_t i = 0; i < threadCount; ++ i){
+        // код потока
+        Handler threadCode = [this]() {
+            while (true) {
+                // запуск задачи сервиса
+                _service.run();
+                
+                // блокировка
+                std::unique_lock<std::mutex> lock(_mutex);
+                
+                // необохдимо ли завершить поток?
+                if (_toStop){
+                    break;
+                }
+                // нету задачи?
+                if (!_work) {
+                    _work.reset(new boost::asio::io_service::work(_service));
+                    _service.reset();
+                    
+                    lock.unlock();
+                    _cond.notify_all();
+                }
             }
-        }
-    }, i, tpName));
+        };
+        
+        // создание потока + сохраняем поток
+        _threads.emplace_back(createThread(threadCode, i, _tpName));
+    }
     PLOG("thread pool created with threads: " << threadCount);
 }
 
 ThreadPool::~ThreadPool() {
-    mutex.lock();
-    toStop = true;
-    work.reset();
-    mutex.unlock();
-    PLOG("stopping thread pool");
-    for (size_t i = 0; i < threads.size(); ++ i)
-        threads[i].join();
+    _mutex.lock();
+    _toStop = true;
+    _work.reset();
+    _mutex.unlock();
+    PLOG("join threads in pool");
+    for (size_t i = 0; i < _threads.size(); ++ i){
+        _threads[i].join();
+    }
     PLOG("thread pool stopped");
 }
 
+// кидаем задачу на выполнение
 void ThreadPool::schedule(Handler handler) {
-    service.post(std::move(handler));
+    _service.post(std::move(handler));
 }
 
 void ThreadPool::wait() {
-    std::unique_lock<std::mutex> lock(mutex);
-    work.reset();
+    std::unique_lock<std::mutex> lock(_mutex);
+    _work.reset();
     while (true) {
-        cond.wait(lock);
-        TLOG("WAIT: waitCompleted: " << (work != nullptr));
-        if (work)
+        _cond.wait(lock);
+        TLOG("WAIT: waitCompleted: " << (_work != nullptr));
+        if (_work)
             break;
     }
 }
 
 const char* ThreadPool::name() const {
-    return tpName;
+    return _tpName;
 }
 
 IoService& ThreadPool::ioService() {
-    return service;
+    return _service;
 }
 
 }

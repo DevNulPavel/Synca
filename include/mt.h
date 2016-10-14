@@ -30,10 +30,13 @@
 // multithreading
 namespace mt {
 
+typedef boost::asio::io_service IoService;
+typedef boost::asio::io_service::work Work;
+
 const char* name();
 int number();
 
-std::thread createThread(Handler handler, int number, const char* name = "");
+std::thread createThread(const Handler& handler, int number, const char* name = "");
 
 struct IScheduler : IObject {
     virtual void schedule(Handler handler) = 0;
@@ -42,11 +45,11 @@ struct IScheduler : IObject {
     }
 };
 
-typedef boost::asio::io_service IoService;
 struct IService : IObject {
     virtual IoService& ioService() = 0;
 };
 
+// пулл потоков
 struct ThreadPool : IScheduler, IService {
     ThreadPool(size_t threadCount, const char* name = "");
     ~ThreadPool();
@@ -58,13 +61,13 @@ struct ThreadPool : IScheduler, IService {
 private:
     IoService& ioService();
 
-    const char* tpName;
-    std::unique_ptr<boost::asio::io_service::work> work;
-    boost::asio::io_service service;
-    std::vector<std::thread> threads;
-    std::mutex mutex;
-    std::condition_variable cond;
-    bool toStop = false;
+    const char* _tpName;
+    std::unique_ptr<Work> _work;
+    IoService _service;
+    std::vector<std::thread> _threads;  // массив потоков
+    std::mutex _mutex;                  // блокировка
+    std::condition_variable _cond;
+    bool _toStop;
 };
 
 }

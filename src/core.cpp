@@ -28,21 +28,26 @@ int index() {
     return journey().index();
 }
 
+// запуск задачи в шедулере
 Goer go(Handler handler, mt::IScheduler& scheduler) {
     return Journey::create(std::move(handler), scheduler);
 }
 
+// запуск задачи в дефолтном шедулере
 Goer go(Handler handler) {
     return Journey::create(std::move(handler), scheduler<DefaultTag>());
 }
 
+// запустить задачу определенное количество раз
 void goN(int n, Handler h) {
     go(n == 1 ? h : [n, h] {
-        for (int i = 0; i < n; ++ i)
+        for (int i = 0; i < n; ++ i){
             go(h);
+        }
     });
 }
 
+// перекинуть выпполнение в шедулер
 void teleport(mt::IScheduler& scheduler) {
     journey().teleport(scheduler);
 }
@@ -67,6 +72,7 @@ void deferProceed(ProceedHandler proceed) {
     journey().deferProceed(proceed);
 }
 
+// запустить и дождаться завершения ????
 void goWait(std::initializer_list<Handler> handlers) {
     deferProceed([&handlers](Handler proceed) {
         std::shared_ptr<void> proceeder(nullptr, [proceed](void*) {

@@ -23,9 +23,10 @@
 namespace synca {
 
 TLS Journey* t_journey = nullptr;
-
+    
 struct JourneyCreateTag;
 struct JourneyDestroyTag;
+
 
 Journey::Journey(mt::IScheduler& s) :
     eventsAllowed(true), sched(&s), indx(++ atomic<JourneyCreateTag>()) {

@@ -187,15 +187,18 @@ void Acceptor::goAccept(SocketHandler handler) {
     holder.release();
 }
 
-Resolver::Resolver() : _resolver(service<NetworkTag>()) {}
+Resolver::Resolver() :
+    _resolver(service<NetworkTag>()) {
+}
 
 EndPoints Resolver::resolve(const std::string& hostname, int port) {
     boost::asio::ip::tcp::resolver::query query(hostname, std::to_string(port));
     EndPoints ends;
     deferIo([this, &query, &ends](IoHandler proceed) {
         _resolver.async_resolve(query, [proceed, &ends](const Error& e, EndPoints es) {
-            if (!e)
+            if (!e){
                 ends = es;
+            }
             proceed(e);
         });
     });

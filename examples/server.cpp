@@ -27,11 +27,13 @@ using namespace synca::net;
 
 void serve(int port)
 {
-    ThreadPool net(1, "net");
+    ThreadPool net(4, "net");
 
     service<NetworkTag>().attach(net);
     scheduler<DefaultTag>().attach(net);
-    go([port] {
+    
+    
+    Handler handler = [port] {
         Acceptor acceptor(port);
         while (true)
         {
@@ -43,11 +45,11 @@ void serve(int port)
                     socket.write("Enter name:\n");
                     
                     // принимаем 10 байт
-//                    const size_t size = 10;
-//                    Buffer str(size, 0);
-//                    socket.read(str);
-//                    JLOG("read: " << str);
-
+                    //                    const size_t size = 10;
+                    //                    Buffer str(size, 0);
+                    //                    socket.read(str);
+                    //                    JLOG("read: " << str);
+                    
                     // читаем пока не завершится или не закончится буффер
                     Buffer str(1024, 0);
                     const char* stop = "\n";
@@ -64,7 +66,8 @@ void serve(int port)
                 }
             });
         }
-    }, net);
+    };
+    go(handler, net);
 }
 
 }
