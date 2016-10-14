@@ -56,7 +56,7 @@ endif()
 
 set(Boost_USE_MULTITHREADED ON)
 
-find_package(Boost 1.56 REQUIRED COMPONENTS context system date_time regex)
+find_package(Boost 1.56 REQUIRED COMPONENTS context system date_time regex thread)
 
 file(GLOB SYNCA_SRC src/*)
 file(GLOB SYNCA_HDR include/*)

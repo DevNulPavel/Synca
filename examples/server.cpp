@@ -27,7 +27,8 @@ using namespace synca::net;
 
 void serve(int port)
 {
-    ThreadPool net(4, "net");
+    ThreadPool net(1, "net");
+
     service<NetworkTag>().attach(net);
     scheduler<DefaultTag>().attach(net);
     go([port] {

@@ -17,9 +17,14 @@
 #pragma once
 
 #include <vector>
-#include <boost/context/all.hpp>
+#include <boost/coroutine2/coroutine.hpp>
 
 #include "common.h"
+
+namespace bc = boost::coroutines2;
+typedef boost::coroutines2::asymmetric_coroutine<Handler>::push_type PushCoroutine;
+typedef boost::coroutines2::asymmetric_coroutine<Handler>::pull_type PullCoroutine;
+
 
 namespace coro {
 
@@ -53,16 +58,15 @@ struct Coro
 private:
     void init0();
     void yield0();
-    void jump0(intptr_t p = 0);
-    static void starterWrapper0(boost::context::detail::transfer_t p);
-    void starter0(intptr_t p);
+    void jump0(const Handler& p);
+    void starter0(const Handler& p);
 
+private:
     bool started;
     bool running;
 
-    boost::context::detail::fcontext_t context;
-    boost::context::detail::fcontext_t savedContext;
-    std::vector<unsigned char> stack;
+    PushCoroutine* coroutine;
+    PullCoroutine* savedCoroutine;
     std::exception_ptr exc;
 };
 
