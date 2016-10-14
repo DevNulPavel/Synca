@@ -24,6 +24,13 @@ namespace coro {
 TLS Coro* t_coro = nullptr;
 const size_t STACK_SIZE = 1024*32;
 
+
+struct ContextSwitchInfo{
+    boost::context::detail::fcontext_t* saveContextPtr;
+    void* data;
+};
+
+
 // switch context from coroutine
 void yield()
 {
@@ -57,7 +64,7 @@ Coro::~Coro()
 void Coro::start(Handler handler)
 {
     VERIFY(!isStarted(), "Trying to start already started coro");
-    context = boost::context::make_fcontext(&stack.back(), stack.size(), &starterWrapper0);
+    context = boost::context::detail::make_fcontext(&stack.back(), stack.size(), &starterWrapper0);
     jump0(reinterpret_cast<intptr_t>(&handler));
 }
 
@@ -80,13 +87,17 @@ void Coro::init0()
     started = false;
     running = false;
     context = nullptr;
+    savedContext = nullptr;
     stack.resize(STACK_SIZE);
 }
 
 // returns to saved context
 void Coro::yield0()
 {
-    boost::context::jump_fcontext(&context, savedContext, 0);
+    ContextSwitchInfo info;
+    info.saveContextPtr = &context;
+    info.data = nullptr;
+    boost::context::detail::jump_fcontext(savedContext, 0);
 }
 
 void Coro::jump0(intptr_t p)
@@ -94,16 +105,30 @@ void Coro::jump0(intptr_t p)
     Coro* old = this;
     std::swap(old, t_coro);
     running = true;
-    boost::context::jump_fcontext(&savedContext, context, p);
+    
+    ContextSwitchInfo info;
+    info.saveContextPtr = &savedContext;
+    info.data = (void*)p;
+    
+    boost::context::detail::jump_fcontext(context, (void*)(&info));
     running = false;
     std::swap(old, t_coro);
     if (exc != std::exception_ptr())
         std::rethrow_exception(exc);
 }
 
-void Coro::starterWrapper0(intptr_t p)
+void Coro::starterWrapper0(boost::context::detail::transfer_t p)
 {
-    t_coro->starter0(p);
+    ContextSwitchInfo* info = reinterpret_cast<ContextSwitchInfo*>(p.data);
+    if (info) {
+        // обновляем старый контекст
+        *(info->saveContextPtr) = p.fctx;
+        // данные
+        intptr_t data = (intptr_t)info->data;
+        t_coro->starter0(data);
+    }else{
+        t_coro->starter0(0);
+    }
 }
 
 void Coro::starter0(intptr_t p)
@@ -112,8 +137,10 @@ void Coro::starter0(intptr_t p)
     try
     {
         exc = nullptr;
-        Handler handler = std::move(*reinterpret_cast<Handler*>(p));
-        handler();
+        if(p != 0){
+            Handler handler = std::move(*reinterpret_cast<Handler*>(p));
+            handler();
+        }
     }
     catch (...)
     {

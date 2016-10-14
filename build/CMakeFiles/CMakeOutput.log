@@ -1,0 +1,963 @@
+The system is: Darwin - 15.6.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+2016-10-14 10:59:54.263 xcodebuild[1608:22006] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:54.264 xcodebuild[1608:22006] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:54.265 xcodebuild[1608:22006] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:54.265 xcodebuild[1608:22006] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:54.265 xcodebuild[1608:22006] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:54.266 xcodebuild[1608:22006] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:54.266 xcodebuild[1608:22006] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:54.266 xcodebuild[1608:22006] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:54.267 xcodebuild[1608:22006] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:54.414 xcodebuild[1608:22006] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11CEE2000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11CEE2000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET CompilerIdC OF PROJECT CompilerIdC WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
+
+CompileC CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o CMakeCCompilerId.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.11 -g -fvisibility=hidden -Wno-sign-conversion -Wno-infinite-recursion -I/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap -I/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/include -I/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CMakeCCompilerId.c -o /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o
+
+Ld CompilerIdC normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC -F/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC -filelist /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_lto.o -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC
+
+PhaseScriptExecution Run\ Script CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC
+    /bin/sh -c /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+
+The C compiler identification is AppleClang, found in "/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdC/CompilerIdC"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+2016-10-14 10:59:55.475 xcodebuild[1623:22098] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:55.476 xcodebuild[1623:22098] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:55.476 xcodebuild[1623:22098] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:55.477 xcodebuild[1623:22098] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:55.477 xcodebuild[1623:22098] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:55.478 xcodebuild[1623:22098] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:55.478 xcodebuild[1623:22098] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:55.478 xcodebuild[1623:22098] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:55.479 xcodebuild[1623:22098] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:55.619 xcodebuild[1623:22098] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x10F496000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x10F496000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET CompilerIdCXX OF PROJECT CompilerIdCXX WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+
+Write auxiliary files
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+
+CompileC CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.11 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -I/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap -I/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/include -I/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o
+
+Ld CompilerIdCXX normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX -F/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX -filelist /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_lto.o -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX
+
+PhaseScriptExecution Run\ Script CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX
+    /bin/sh -c /Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+
+The CXX compiler identification is AppleClang, found in "/Users/devnul/Job/Synca/build/CMakeFiles/3.6.2/CompilerIdCXX/CompilerIdCXX"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_1f537" "-configuration" "Debug"
+2016-10-14 10:59:56.333 xcodebuild[1641:22158] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:56.334 xcodebuild[1641:22158] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:56.334 xcodebuild[1641:22158] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:56.334 xcodebuild[1641:22158] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:56.335 xcodebuild[1641:22158] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:56.335 xcodebuild[1641:22158] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:56.336 xcodebuild[1641:22158] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:56.336 xcodebuild[1641:22158] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:56.336 xcodebuild[1641:22158] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:56.482 xcodebuild[1641:22158] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11C251000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11C251000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_1f537 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/Objects-normal/x86_64/cmTC_1f537.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/Objects-normal/x86_64/testCCompiler.o testCCompiler.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/Objects-normal/x86_64/testCCompiler.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/Objects-normal/x86_64/testCCompiler.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/testCCompiler.c -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/Objects-normal/x86_64/testCCompiler.o
+
+Ld Debug/cmTC_1f537 normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/Objects-normal/x86_64/cmTC_1f537.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/Objects-normal/x86_64/cmTC_1f537_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1f537.build/Objects-normal/x86_64/cmTC_1f537_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_1f537
+
+** BUILD SUCCEEDED **
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_c4b4f" "-configuration" "Debug"
+2016-10-14 10:59:57.136 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.137 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.138 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.139 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.139 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.140 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.140 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.141 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.141 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.284 xcodebuild[1658:22208] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11C28C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11C28C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_c4b4f OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/CMakeCCompilerABI.o /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CMakeCCompilerABI.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/CMakeCCompilerABI.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/CMakeCCompilerABI.dia -c /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CMakeCCompilerABI.c -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/CMakeCCompilerABI.o
+
+Ld Debug/cmTC_c4b4f normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_c4b4f
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_c4b4f -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f.LinkFileList -object_path_lto /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug
+@(#)PROGRAM:ld  PROJECT:ld64-274.1
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib
+Framework search paths:
+	/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/
+
+** BUILD SUCCEEDED **
+
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_c4b4f" "-configuration" "Debug"]
+  ignore line: [2016-10-14 10:59:57.136 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 10:59:57.137 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 10:59:57.138 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 10:59:57.139 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 10:59:57.139 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 10:59:57.140 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 10:59:57.140 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 10:59:57.141 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 10:59:57.141 xcodebuild[1658:22208] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 10:59:57.284 xcodebuild[1658:22208] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:]
+  ignore line: [	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11C28C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:]
+  ignore line: [	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11C28C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}]
+  ignore line: [=== BUILD TARGET cmTC_c4b4f OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===]
+  ignore line: []
+  ignore line: [Check dependencies]
+  ignore line: []
+  ignore line: [Write auxiliary files]
+  ignore line: [/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64]
+  ignore line: [write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f.LinkFileList]
+  ignore line: []
+  ignore line: [CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/CMakeCCompilerABI.o /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CMakeCCompilerABI.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler]
+  ignore line: [    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp]
+  ignore line: [    export LANG=en_US.US-ASCII]
+  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/CMakeCCompilerABI.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/CMakeCCompilerABI.dia -c /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CMakeCCompilerABI.c -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/CMakeCCompilerABI.o]
+  ignore line: []
+  ignore line: [Ld Debug/cmTC_c4b4f normal x86_64]
+  ignore line: [    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp]
+  ignore line: [    export MACOSX_DEPLOYMENT_TARGET=10.11]
+  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_c4b4f]
+  ignore line: [Apple LLVM version 8.0.0 (clang-800.0.38)]
+  ignore line: [Target: x86_64-apple-darwin15.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_c4b4f -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f.LinkFileList -object_path_lto /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug]
+            to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_c4b4f -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f.LinkFileList -object_path_lto /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a ]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_c4b4f -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f.LinkFileList -object_path_lto /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a ]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.11.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_c4b4f] ==> ignore
+    arg [-filelist] ==> ignore
+    arg [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f.LinkFileList] ==> ignore
+    arg [-object_path_lto] ==> ignore
+    arg [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_lto.o] ==> ignore
+    arg [-no_deduplicate] ==> ignore
+    arg [-v] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dependency_info] ==> ignore
+    arg [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_c4b4f.build/Objects-normal/x86_64/cmTC_c4b4f_dependency_info.dat] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib]
+  Framework search paths: [;/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib]
+  collapse framework dir [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks]
+  implicit libs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks]
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_4991a" "-configuration" "Debug"
+2016-10-14 10:59:57.954 xcodebuild[1675:22259] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.955 xcodebuild[1675:22259] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.956 xcodebuild[1675:22259] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.956 xcodebuild[1675:22259] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.956 xcodebuild[1675:22259] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.957 xcodebuild[1675:22259] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.957 xcodebuild[1675:22259] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.958 xcodebuild[1675:22259] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:57.958 xcodebuild[1675:22259] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.113 xcodebuild[1675:22259] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x10F4A2000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x10F4A2000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_4991a OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/Objects-normal/x86_64/cmTC_4991a.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/Objects-normal/x86_64/feature_tests.o /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -std=c11 -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/Objects-normal/x86_64/feature_tests.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.c -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_4991a normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/Objects-normal/x86_64/cmTC_4991a.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/Objects-normal/x86_64/cmTC_4991a_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4991a.build/Objects-normal/x86_64/cmTC_4991a_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_4991a
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_b5cc4" "-configuration" "Debug"
+2016-10-14 10:59:58.788 xcodebuild[1692:22312] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.789 xcodebuild[1692:22312] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.789 xcodebuild[1692:22312] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.790 xcodebuild[1692:22312] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.790 xcodebuild[1692:22312] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.791 xcodebuild[1692:22312] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.792 xcodebuild[1692:22312] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.792 xcodebuild[1692:22312] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.793 xcodebuild[1692:22312] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:58.960 xcodebuild[1692:22312] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x10E844000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x10E844000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_b5cc4 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/Objects-normal/x86_64/cmTC_b5cc4.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/Objects-normal/x86_64/feature_tests.o /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -std=c99 -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/Objects-normal/x86_64/feature_tests.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.c -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_b5cc4 normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/Objects-normal/x86_64/cmTC_b5cc4.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/Objects-normal/x86_64/cmTC_b5cc4_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b5cc4.build/Objects-normal/x86_64/cmTC_b5cc4_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_b5cc4
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_bcff2" "-configuration" "Debug"
+2016-10-14 10:59:59.656 xcodebuild[1709:22482] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:59.657 xcodebuild[1709:22482] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:59.657 xcodebuild[1709:22482] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:59.657 xcodebuild[1709:22482] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:59.658 xcodebuild[1709:22482] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:59.658 xcodebuild[1709:22482] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:59.659 xcodebuild[1709:22482] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:59.659 xcodebuild[1709:22482] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:59.659 xcodebuild[1709:22482] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 10:59:59.820 xcodebuild[1709:22482] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x10F0E2000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x10F0E2000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_bcff2 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/Objects-normal/x86_64/cmTC_bcff2.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/Objects-normal/x86_64/feature_tests.o /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -std=c90 -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/Objects-normal/x86_64/feature_tests.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.c -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_bcff2 normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/Objects-normal/x86_64/cmTC_bcff2.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/Objects-normal/x86_64/cmTC_bcff2_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_bcff2.build/Objects-normal/x86_64/cmTC_bcff2_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_bcff2
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_289e5" "-configuration" "Debug"
+2016-10-14 11:00:00.477 xcodebuild[1726:22532] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:00.479 xcodebuild[1726:22532] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:00.480 xcodebuild[1726:22532] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:00.480 xcodebuild[1726:22532] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:00.481 xcodebuild[1726:22532] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:00.481 xcodebuild[1726:22532] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:00.482 xcodebuild[1726:22532] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:00.482 xcodebuild[1726:22532] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:00.483 xcodebuild[1726:22532] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:00.638 xcodebuild[1726:22532] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x114EF7000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x114EF7000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_289e5 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/Objects-normal/x86_64/cmTC_289e5.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/Objects-normal/x86_64/testCXXCompiler.o testCXXCompiler.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/Objects-normal/x86_64/testCXXCompiler.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/Objects-normal/x86_64/testCXXCompiler.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/Objects-normal/x86_64/testCXXCompiler.o
+
+Ld Debug/cmTC_289e5 normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/Objects-normal/x86_64/cmTC_289e5.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/Objects-normal/x86_64/cmTC_289e5_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_289e5.build/Objects-normal/x86_64/cmTC_289e5_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_289e5
+
+** BUILD SUCCEEDED **
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_4f39b" "-configuration" "Debug"
+2016-10-14 11:00:01.318 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:01.319 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:01.320 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:01.320 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:01.321 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:01.321 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:01.322 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:01.322 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:01.323 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:01.475 xcodebuild[1743:22616] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11195C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11195C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_4f39b OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/CMakeCXXCompilerABI.dia -c /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o
+
+Ld Debug/cmTC_4f39b normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_4f39b
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_4f39b -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b.LinkFileList -object_path_lto /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug
+@(#)PROGRAM:ld  PROJECT:ld64-274.1
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib
+Framework search paths:
+	/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/
+
+** BUILD SUCCEEDED **
+
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_4f39b" "-configuration" "Debug"]
+  ignore line: [2016-10-14 11:00:01.318 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 11:00:01.319 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 11:00:01.320 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 11:00:01.320 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 11:00:01.321 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 11:00:01.321 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 11:00:01.322 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 11:00:01.322 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 11:00:01.323 xcodebuild[1743:22616] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs]
+  ignore line: [2016-10-14 11:00:01.475 xcodebuild[1743:22616] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:]
+  ignore line: [	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11195C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:]
+  ignore line: [	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x11195C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}]
+  ignore line: [=== BUILD TARGET cmTC_4f39b OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===]
+  ignore line: []
+  ignore line: [Check dependencies]
+  ignore line: []
+  ignore line: [Write auxiliary files]
+  ignore line: [/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64]
+  ignore line: [write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b.LinkFileList]
+  ignore line: []
+  ignore line: [CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler]
+  ignore line: [    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp]
+  ignore line: [    export LANG=en_US.US-ASCII]
+  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/CMakeCXXCompilerABI.dia -c /usr/local/Cellar/cmake/3.6.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/CMakeCXXCompilerABI.o]
+  ignore line: []
+  ignore line: [Ld Debug/cmTC_4f39b normal x86_64]
+  ignore line: [    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp]
+  ignore line: [    export MACOSX_DEPLOYMENT_TARGET=10.11]
+  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_4f39b]
+  ignore line: [Apple LLVM version 8.0.0 (clang-800.0.38)]
+  ignore line: [Target: x86_64-apple-darwin15.6.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_4f39b -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b.LinkFileList -object_path_lto /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug]
+            to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_4f39b -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b.LinkFileList -object_path_lto /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a ]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_4f39b -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b.LinkFileList -object_path_lto /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a ]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.11.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_4f39b] ==> ignore
+    arg [-filelist] ==> ignore
+    arg [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b.LinkFileList] ==> ignore
+    arg [-object_path_lto] ==> ignore
+    arg [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_lto.o] ==> ignore
+    arg [-no_deduplicate] ==> ignore
+    arg [-v] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dependency_info] ==> ignore
+    arg [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_4f39b.build/Objects-normal/x86_64/cmTC_4f39b_dependency_info.dat] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib]
+  Framework search paths: [;/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib]
+  collapse framework dir [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks]
+  implicit libs: [c++;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks]
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_55d63" "-configuration" "Debug"
+2016-10-14 11:00:02.187 xcodebuild[1760:22668] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:02.188 xcodebuild[1760:22668] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:02.189 xcodebuild[1760:22668] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:02.190 xcodebuild[1760:22668] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:02.190 xcodebuild[1760:22668] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:02.191 xcodebuild[1760:22668] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:02.191 xcodebuild[1760:22668] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:02.192 xcodebuild[1760:22668] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:02.192 xcodebuild[1760:22668] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:02.337 xcodebuild[1760:22668] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x115BEB000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x115BEB000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_55d63 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/Objects-normal/x86_64/cmTC_55d63.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/Objects-normal/x86_64/feature_tests.o /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -std=c++14 -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/Objects-normal/x86_64/feature_tests.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.cxx -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_55d63 normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/Objects-normal/x86_64/cmTC_55d63.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/Objects-normal/x86_64/cmTC_55d63_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_55d63.build/Objects-normal/x86_64/cmTC_55d63_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_55d63
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_31d7f" "-configuration" "Debug"
+2016-10-14 11:00:03.035 xcodebuild[1777:22734] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.036 xcodebuild[1777:22734] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.036 xcodebuild[1777:22734] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.037 xcodebuild[1777:22734] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.037 xcodebuild[1777:22734] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.038 xcodebuild[1777:22734] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.038 xcodebuild[1777:22734] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.038 xcodebuild[1777:22734] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.039 xcodebuild[1777:22734] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.186 xcodebuild[1777:22734] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x118483000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x118483000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_31d7f OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/Objects-normal/x86_64/cmTC_31d7f.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/Objects-normal/x86_64/feature_tests.o /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -std=c++11 -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/Objects-normal/x86_64/feature_tests.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.cxx -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_31d7f normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/Objects-normal/x86_64/cmTC_31d7f.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/Objects-normal/x86_64/cmTC_31d7f_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_31d7f.build/Objects-normal/x86_64/cmTC_31d7f_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_31d7f
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_91d96" "-configuration" "Debug"
+2016-10-14 11:00:03.888 xcodebuild[1794:22785] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.889 xcodebuild[1794:22785] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.890 xcodebuild[1794:22785] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.890 xcodebuild[1794:22785] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.891 xcodebuild[1794:22785] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.891 xcodebuild[1794:22785] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.892 xcodebuild[1794:22785] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.893 xcodebuild[1794:22785] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:03.893 xcodebuild[1794:22785] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.054 xcodebuild[1794:22785] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x113732000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x113732000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_91d96 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/Objects-normal/x86_64/cmTC_91d96.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/Objects-normal/x86_64/feature_tests.o /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.cxx normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -std=c++98 -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/Objects-normal/x86_64/feature_tests.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/Objects-normal/x86_64/feature_tests.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/feature_tests.cxx -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/Objects-normal/x86_64/feature_tests.o
+
+Ld Debug/cmTC_91d96 normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/Objects-normal/x86_64/cmTC_91d96.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/Objects-normal/x86_64/cmTC_91d96_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91d96.build/Objects-normal/x86_64/cmTC_91d96_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_91d96
+
+** BUILD SUCCEEDED **
+
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_b25fb" "-configuration" "Debug"
+2016-10-14 11:00:04.740 xcodebuild[1811:22839] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.741 xcodebuild[1811:22839] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.742 xcodebuild[1811:22839] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.743 xcodebuild[1811:22839] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.743 xcodebuild[1811:22839] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.744 xcodebuild[1811:22839] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.744 xcodebuild[1811:22839] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.745 xcodebuild[1811:22839] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.745 xcodebuild[1811:22839] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:04.893 xcodebuild[1811:22839] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x115BD2000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x115BD2000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_b25fb OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/Objects-normal/x86_64/cmTC_b25fb.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/Objects-normal/x86_64/CheckIncludeFile.o CheckIncludeFile.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/Objects-normal/x86_64/CheckIncludeFile.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/Objects-normal/x86_64/CheckIncludeFile.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/Objects-normal/x86_64/CheckIncludeFile.o
+
+Ld Debug/cmTC_b25fb normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/Objects-normal/x86_64/cmTC_b25fb.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/Objects-normal/x86_64/cmTC_b25fb_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_b25fb.build/Objects-normal/x86_64/cmTC_b25fb_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_b25fb
+
+** BUILD SUCCEEDED **
+
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_910a0" "-configuration" "Debug"
+2016-10-14 11:00:05.563 xcodebuild[1828:22889] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XToDo.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:05.564 xcodebuild[1828:22889] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/SymbolicationPlugin.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:05.565 xcodebuild[1828:22889] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/OpenInTerminal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:05.566 xcodebuild[1828:22889] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Open With Application.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:05.566 xcodebuild[1828:22889] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/ObjectGraph.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:05.567 xcodebuild[1828:22889] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/HighlightSelectedString.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:05.567 xcodebuild[1828:22889] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FuzzyAutocomplete.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:05.568 xcodebuild[1828:22889] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CrashSymbal.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:05.568 xcodebuild[1828:22889] [MT] PluginLoading: Required plug-in compatibility UUID 8A66E736-A720-4B3C-92F1-33D9962C69DF for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Backlight.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2016-10-14 11:00:05.722 xcodebuild[1828:22889] WARNING: Failed to load plugin at path: "/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin", skipping. Error: Error Domain=NSCocoaErrorDomain Code=3587 "dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x112D5C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz" UserInfo={NSLocalizedFailureReason=The bundle is damaged or missing necessary resources., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSDebugDescription=dlopen_preflight(/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz): no suitable image found.  Did find:
+	/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz: mmap() error 1 at address=0x112D5C000, size=0x00018000 segment=__TEXT in Segment::map() mapping /Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin/Contents/MacOS/Alcatraz, NSBundlePath=/Users/devnul/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin, NSLocalizedDescription=The bundle “Alcatraz” couldn’t be loaded because it is damaged or missing necessary resources.}
+=== BUILD TARGET cmTC_910a0 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/Objects-normal/x86_64
+write-file /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/Objects-normal/x86_64/cmTC_910a0.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/Objects-normal/x86_64/CheckSymbolExists.o CheckSymbolExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.11 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/DerivedSources/x86_64 -I/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/Objects-normal/x86_64/CheckSymbolExists.d --serialize-diagnostics /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/Objects-normal/x86_64/CheckSymbolExists.dia -c /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/Objects-normal/x86_64/CheckSymbolExists.o
+
+Ld Debug/cmTC_910a0 normal x86_64
+    cd /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.11
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -F/Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/Objects-normal/x86_64/cmTC_910a0.LinkFileList -mmacosx-version-min=10.11 -Xlinker -object_path_lto -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/Objects-normal/x86_64/cmTC_910a0_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_910a0.build/Objects-normal/x86_64/cmTC_910a0_dependency_info.dat -o /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/Debug/cmTC_910a0
+
+** BUILD SUCCEEDED **
+
+
+File /Users/devnul/Job/Synca/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

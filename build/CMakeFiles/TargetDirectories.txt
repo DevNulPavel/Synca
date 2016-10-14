@@ -1,0 +1,7 @@
+/Users/devnul/Job/Synca/build/CMakeFiles/synca.dir
+/Users/devnul/Job/Synca/build/CMakeFiles/ALL_BUILD.dir
+/Users/devnul/Job/Synca/build/CMakeFiles/ZERO_CHECK.dir
+/Users/devnul/Job/Synca/build/tests/CMakeFiles/tests.dir
+/Users/devnul/Job/Synca/build/examples/CMakeFiles/data.dir
+/Users/devnul/Job/Synca/build/examples/CMakeFiles/server.dir
+/Users/devnul/Job/Synca/build/examples/CMakeFiles/client.dir

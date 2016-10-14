@@ -54,14 +54,14 @@ private:
     void init0();
     void yield0();
     void jump0(intptr_t p = 0);
-    static void starterWrapper0(intptr_t p);
+    static void starterWrapper0(boost::context::detail::transfer_t p);
     void starter0(intptr_t p);
 
     bool started;
     bool running;
 
-    boost::context::fcontext_t context;
-    boost::context::fcontext_t savedContext;
+    boost::context::detail::fcontext_t context;
+    boost::context::detail::fcontext_t savedContext;
     std::vector<unsigned char> stack;
     std::exception_ptr exc;
 };
