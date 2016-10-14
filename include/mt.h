@@ -35,27 +35,26 @@ int number();
 
 std::thread createThread(Handler handler, int number, const char* name = "");
 
-struct IScheduler : IObject
-{
+struct IScheduler : IObject {
     virtual void schedule(Handler handler) = 0;
-    virtual const char* name() const { return "<unknown>"; }
+    virtual const char* name() const {
+        return "<unknown>";
+    }
 };
 
 typedef boost::asio::io_service IoService;
-struct IService : IObject
-{
+struct IService : IObject {
     virtual IoService& ioService() = 0;
 };
 
-struct ThreadPool : IScheduler, IService
-{
+struct ThreadPool : IScheduler, IService {
     ThreadPool(size_t threadCount, const char* name = "");
     ~ThreadPool();
-    
+
     void schedule(Handler handler);
     void wait();
     const char* name() const;
-    
+
 private:
     IoService& ioService();
 

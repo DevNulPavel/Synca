@@ -25,18 +25,15 @@ namespace mt {
 TLS int t_number = 0;
 TLS const char* t_name = "main";
 
-const char* name()
-{
+const char* name() {
     return t_name;
 }
 
-int number()
-{
+int number() {
     return t_number;
 }
 
-std::thread createThread(Handler handler, int number, const char* name)
-{
+std::thread createThread(Handler handler, int number, const char* name) {
     return std::thread([handler, number, name] {
         t_number = number + 1;
         t_name = name;
@@ -45,41 +42,35 @@ std::thread createThread(Handler handler, int number, const char* name)
             TLOG("thread created");
             handler();
             TLOG("thread ended");
-        }
-        catch (std::exception& e)
-        {
+        } catch (std::exception& e) {
             (void) e;
             TLOG("thread ended with error: " << e.what());
         }
     });
 }
 
-ThreadPool::ThreadPool(size_t threadCount, const char* name) : tpName(name)
-{
+ThreadPool::ThreadPool(size_t threadCount, const char* name) : tpName(name) {
     work.reset(new boost::asio::io_service::work(service));
     threads.reserve(threadCount);
     for (size_t i = 0; i < threadCount; ++ i)
         threads.emplace_back(createThread([this] {
-            while (true)
-            {
-                service.run();
-                std::unique_lock<std::mutex> lock(mutex);
-                if (toStop)
-                    break;
-                if (!work)
-                {
-                    work.reset(new boost::asio::io_service::work(service));
-                    service.reset();
-                    lock.unlock();
-                    cond.notify_all();
-                }
+        while (true) {
+            service.run();
+            std::unique_lock<std::mutex> lock(mutex);
+            if (toStop)
+                break;
+            if (!work) {
+                work.reset(new boost::asio::io_service::work(service));
+                service.reset();
+                lock.unlock();
+                cond.notify_all();
             }
-        }, i, tpName));
+        }
+    }, i, tpName));
     PLOG("thread pool created with threads: " << threadCount);
 }
 
-ThreadPool::~ThreadPool()
-{
+ThreadPool::~ThreadPool() {
     mutex.lock();
     toStop = true;
     work.reset();
@@ -90,17 +81,14 @@ ThreadPool::~ThreadPool()
     PLOG("thread pool stopped");
 }
 
-void ThreadPool::schedule(Handler handler)
-{
+void ThreadPool::schedule(Handler handler) {
     service.post(std::move(handler));
 }
 
-void ThreadPool::wait()
-{
+void ThreadPool::wait() {
     std::unique_lock<std::mutex> lock(mutex);
     work.reset();
-    while (true)
-    {
+    while (true) {
         cond.wait(lock);
         TLOG("WAIT: waitCompleted: " << (work != nullptr));
         if (work)
@@ -108,13 +96,11 @@ void ThreadPool::wait()
     }
 }
 
-const char* ThreadPool::name() const
-{
+const char* ThreadPool::name() const {
     return tpName;
 }
 
-IoService& ThreadPool::ioService()
-{
+IoService& ThreadPool::ioService() {
     return service;
 }
 

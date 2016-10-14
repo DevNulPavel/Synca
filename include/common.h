@@ -23,27 +23,23 @@
 typedef std::string Buffer;
 typedef std::function<void ()> Handler;
 
-struct IObject
-{
+struct IObject {
     virtual ~IObject() {}
 };
 
 template<typename T, typename T_tag = T>
-T& single()
-{
+T& single() {
     static T t;
     return t;
 }
 
 template<typename T>
-struct Atomic : std::atomic<T>
-{
+struct Atomic : std::atomic<T> {
     Atomic(int v = 0) : std::atomic<T>(v) {}
 };
 
 template<typename T>
-std::atomic<int>& atomic()
-{
+std::atomic<int>& atomic() {
     return single<Atomic<int>, T>();
 }
 

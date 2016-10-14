@@ -25,16 +25,15 @@
 
 namespace synca {
 
-struct Journey
-{
+struct Journey {
     ~Journey();
-    
+
     void proceed();
     Handler proceedHandler();
     void defer(Handler handler);
     void deferProceed(ProceedHandler proceed);
     void teleport(mt::IScheduler& s);
-    
+
     void handleEvents();
     void disableEvents();
     void enableEvents();
@@ -44,27 +43,32 @@ struct Journey
     Goer goer() const;
 
     static Goer create(Handler handler, mt::IScheduler& s);
-    
+
 private:
     Journey(mt::IScheduler& s);
 
-    struct CoroGuard
-    {
-        CoroGuard(Journey& j_) : j(j_)  { j.onEnter0();   }
-        ~CoroGuard()                    { j.onExit0();    }
-        
-        coro::Coro* operator->()        { return &j.coro; }
+    struct CoroGuard {
+        CoroGuard(Journey& j_) : j(j_)  {
+            j.onEnter0();
+        }
+        ~CoroGuard()                    {
+            j.onExit0();
+        }
+
+        coro::Coro* operator->()        {
+            return &j.coro;
+        }
     private:
         Journey& j;
     };
-    
+
     Goer start0(Handler handler);
     void schedule0(Handler handler);
     CoroGuard guardedCoro0();
     void proceed0();
     void onEnter0();
     void onExit0();
-    
+
     Goer gr;
     bool eventsAllowed;
     mt::IScheduler* sched;

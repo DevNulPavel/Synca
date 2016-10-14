@@ -54,7 +54,6 @@
 
 #define WAIT_FOR(D_condition)       while (!(D_condition)) std::this_thread::yield()
 
-inline void sleepFor(int ms)
-{
+inline void sleepFor(int ms) {
     std::this_thread::sleep_for(std::chrono::milliseconds(ms));
 }

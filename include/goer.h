@@ -21,15 +21,13 @@
 
 namespace synca {
 
-enum EventStatus
-{
+enum EventStatus {
     ES_NORMAL,
     ES_CANCELLED,
     ES_TIMEDOUT,
 };
 
-struct EventException : std::runtime_error
-{
+struct EventException : std::runtime_error {
     EventException(EventStatus s);
     EventStatus status();
 
@@ -37,16 +35,14 @@ private:
     EventStatus st;
 };
 
-struct Goer
-{
+struct Goer {
     Goer();
     EventStatus reset();
     bool cancel();
     bool timedout();
-    
+
 private:
-    struct State
-    {
+    struct State {
         State() : status(ES_NORMAL) {}
         EventStatus status;
     };

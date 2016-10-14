@@ -27,44 +27,53 @@ struct NetworkTag;
 
 namespace net {
 
+///////////////////////////////////////////////////////
+typedef boost::asio::ip::tcp::endpoint EndPoint;
+typedef boost::asio::ip::tcp::resolver::iterator EndPoints;
+
 struct Acceptor;
-struct Socket
-{
+
+
+// Обертка над сокетом
+struct Socket {
     friend struct Acceptor;
-    typedef boost::asio::ip::tcp::endpoint EndPoint;
-    
+
     Socket();
+    Socket(Socket&&);
+    boost::asio::ip::tcp::socket& getSocket();
     void read(Buffer&);
     void partialRead(Buffer&);
+    void readUntil(Buffer& buffer, const Buffer& stopValue);
     void write(const Buffer&);
     void connect(const std::string& ip, int port);
     void connect(const EndPoint& e);
     void close();
 
 private:
-    boost::asio::ip::tcp::socket socket;
+    boost::asio::ip::tcp::socket _socket;
 };
 
+// Обертка над приемщиком соединений
 typedef std::function<void(Socket&)> SocketHandler;
-struct Acceptor
-{
+struct Acceptor {
     explicit Acceptor(int port);
 
     Socket accept();
     void goAccept(SocketHandler);
 
 private:
-    boost::asio::ip::tcp::acceptor acceptor;
+    boost::asio::ip::tcp::acceptor _acceptor;
 };
 
-struct Resolver
-{
+// Резолвер
+struct Resolver {
     Resolver();
-    typedef boost::asio::ip::tcp::resolver::iterator EndPoints;
 
     EndPoints resolve(const std::string& hostname, int port);
+
 private:
-    boost::asio::ip::tcp::resolver resolver;
+    boost::asio::ip::tcp::resolver _resolver;
 };
 
-}}
+}
+}

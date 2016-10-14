@@ -20,17 +20,15 @@
 
 #include "common.h"
 
-struct GC
-{
+struct GC {
     ~GC();
-    
+
     template<typename T>
-    T* add(T* t)
-    {
+    T* add(T* t) {
         deleters.emplace_back([t] { delete t; });
         return t;
     }
-    
+
 private:
     std::vector<Handler> deleters;
 };
@@ -38,7 +36,6 @@ private:
 GC& gc();
 
 template<typename T, typename... V>
-T* gcnew(V&&... v)
-{
+T* gcnew(V&&... v) {
     return gc().add(new T(std::forward(v)...));
 }

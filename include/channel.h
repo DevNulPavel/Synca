@@ -26,112 +26,108 @@ namespace synca {
 
 // with iterators
 template<typename T>
-struct Channel
-{
+struct Channel {
 private:
     struct Waiters;
-    struct Waiter
-    {
+    struct Waiter {
         friend struct Waiters;
-        
+
         Waiter(T& v) : val(&v) {}
-        
-        void proceed(T&& v)
-        {
+
+        void proceed(T&& v) {
             *val = std::move(v);
             proc();
         }
 
-        void proceed()
-        {
+        void proceed() {
             val = nullptr;
             proc();
         }
-        
-        void setProceed(Handler&& proceed)
-        {
+
+        void setProceed(Handler&& proceed) {
             proc = std::move(proceed);
         }
-        
-        bool hasValue() const
-        {
+
+        bool hasValue() const {
             return val != nullptr;
         }
-        
+
     private:
         Handler proc;
         Waiter* next = nullptr;
         T* val;
     };
-    
-    struct Waiters
-    {
-        Waiter* pop()
-        {
+
+    struct Waiters {
+        Waiter* pop() {
             if (!root)
                 return nullptr;
             Waiter* w = root;
             root = root->next;
             return w;
         }
-        
-        Waiters popAll()
-        {
+
+        Waiters popAll() {
             Waiters w;
             w.root = root;
             root = nullptr;
             return w;
         }
-        
-        void push(Waiter& w)
-        {
+
+        void push(Waiter& w) {
             w.next = root;
             root = &w;
         }
-        
+
     private:
         Waiter* root = nullptr;
     };
-    
-    typedef std::unique_lock<std::mutex> Lock;
-    
-public:
-    struct Iterator
-    {
-        Iterator() = default;
-        Iterator(Channel& c) : ch(&c)            { ++*this; }
 
-        T& operator*()                           { return val; }
-        Iterator& operator++()                   { if (!ch->get(val)) ch = nullptr; return *this; }
-        bool operator!=(const Iterator& i) const { return ch != i.ch; }
+    typedef std::unique_lock<std::mutex> Lock;
+
+public:
+    struct Iterator {
+        Iterator() = default;
+        Iterator(Channel& c) : ch(&c)            {
+            ++*this;
+        }
+
+        T& operator*()                           {
+            return val;
+        }
+        Iterator& operator++()                   {
+            if (!ch->get(val)) ch = nullptr;
+            return *this;
+        }
+        bool operator!=(const Iterator& i) const {
+            return ch != i.ch;
+        }
     private:
         T val;
         Channel* ch = nullptr;
     };
-    
-    Iterator begin()                             { return {*this}; }
-    static Iterator end()                        { return {}; }
-    
-    void put(T val)
-    {
+
+    Iterator begin()                             {
+        return {*this};
+    }
+    static Iterator end()                        {
+        return {};
+    }
+
+    void put(T val) {
         Lock lock(mutex);
         Waiter* w = waiters.pop();
-        if (w) 
-        {
+        if (w) {
             lock.unlock();
             w->proceed(std::move(val));
-        }
-        else
-        {
+        } else {
             queue.emplace(std::move(val));
         }
     }
-    
-    bool get(T& val)
-    {
+
+    bool get(T& val) {
         Lock lock(mutex);
-        if (!queue.empty())
-        {
+        if (!queue.empty()) {
             val = std::move(queue.front());
             queue.pop();
             return true;
@@ -147,28 +143,24 @@ public:
         });
         return w.hasValue();
     }
-    
-    bool empty() const
-    {
+
+    bool empty() const {
         Lock lock(mutex);
         return queue.empty();
     }
-    
-    T get()
-    {
+
+    T get() {
         T val;
         get(val);
         return val;
     }
-    
-    void open()
-    {
+
+    void open() {
         Lock lock(mutex);
         closed = false;
     }
-    
-    void close()
-    {
+
+    void close() {
         Lock lock(mutex);
         if (closed)
             return;
@@ -178,7 +170,7 @@ public:
         for (Waiter* w = ws.pop(); w; w = ws.pop())
             w->proceed();
     }
-    
+
 private:
     Waiters waiters;
     mutable std::mutex mutex;

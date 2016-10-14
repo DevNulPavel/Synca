@@ -17,8 +17,7 @@
 #include <boost/range/adaptor/reversed.hpp>
 #include "gc.h"
 
-GC::~GC()
-{
+GC::~GC() {
     for (auto& deleter: boost::adaptors::reverse(deleters))
         deleter();
 }

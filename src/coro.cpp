@@ -25,41 +25,35 @@ namespace coro {
 TLS Coro* t_coro = nullptr;
 
 // switch context from coroutine
-void yield()
-{
+void yield() {
     VERIFY(isInsideCoro(), "yield() outside coro");
     t_coro->yield0();
 }
 
 // checking that we are inside coroutine
-bool isInsideCoro()
-{
+bool isInsideCoro() {
     return t_coro != nullptr;
 }
 
-Coro::Coro()
-{
+Coro::Coro() {
     init0();
 }
 
-Coro::Coro(Handler handler)
-{
+Coro::Coro(Handler handler) {
     init0();
     start(std::move(handler));
 }
 
-Coro::~Coro()
-{
+Coro::~Coro() {
     if (isStarted())
         RLOG("Destroying started coro");
 }
 
-void Coro::start(Handler handler)
-{
+void Coro::start(Handler handler) {
     VERIFY(!isStarted(), "Trying to start already started coro");
-    coroutine = new PushCoroutine([this](PullCoroutine& source){
+    coroutine = new PushCoroutine([this](PullCoroutine& source) {
         savedCoroutine = &source;
-        
+
         const Handler& handler = source.get();
         starter0(handler);
         return;
@@ -68,59 +62,50 @@ void Coro::start(Handler handler)
 }
 
 // continue coroutine execution after yield
-void Coro::resume()
-{
+void Coro::resume() {
     VERIFY(started, "Cannot resume: not started");
     VERIFY(!running, "Cannot resume: in running state");
     jump0(nullptr);
 }
 
 // is coroutine was started and not completed
-bool Coro::isStarted() const
-{
+bool Coro::isStarted() const {
     return started || running;
 }
 
-void Coro::init0()
-{
+void Coro::init0() {
     started = false;
     running = false;
 }
 
 // returns to saved context
-void Coro::yield0()
-{
+void Coro::yield0() {
     if (savedCoroutine) {
         (*savedCoroutine)();
     }
 }
 
-void Coro::jump0(const Handler& p)
-{
+void Coro::jump0(const Handler& p) {
     Coro* old = this;
     std::swap(old, t_coro);
     running = true;
-    
+
     (*coroutine)(p);
-    
+
     running = false;
     std::swap(old, t_coro);
     if (exc != std::exception_ptr())
         std::rethrow_exception(exc);
 }
 
-void Coro::starter0(const Handler& handler)
-{
+void Coro::starter0(const Handler& handler) {
     started = true;
-    try
-    {
+    try {
         exc = nullptr;
-        if(handler != 0){
+        if(handler != 0) {
             handler();
         }
-    }
-    catch (...)
-    {
+    } catch (...) {
         exc = std::current_exception();
     }
     started = false;

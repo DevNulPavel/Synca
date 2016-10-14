@@ -40,14 +40,25 @@ void serve(int port)
                 JLOG("accepted");
                 while (true)
                 {
-                    Buffer sz(1, 0);
-                    socket.read(sz);
-                    Buffer str(size_t(sz[0]), 0);
-                    socket.read(str);
-                    JLOG("read: " << str);
-                    str += " world!";
-                    sz[0] = char(str.size());
-                    socket.write(sz);
+                    socket.write("Enter name:\n");
+                    
+                    // принимаем 10 байт
+//                    const size_t size = 10;
+//                    Buffer str(size, 0);
+//                    socket.read(str);
+//                    JLOG("read: " << str);
+
+                    // читаем пока не завершится или не закончится буффер
+                    Buffer str(1024, 0);
+                    const char* stop = "\n";
+                    socket.readUntil(str, Buffer(stop));
+                    
+                    size_t index = str.find("\r\n", 0);
+                    if (index != std::string::npos){
+                        str.replace(index, 2, "\0\0");
+                    }
+                    
+                    str += " world!\n";
                     socket.write(str);
                     JLOG("written: " << str);
                 }

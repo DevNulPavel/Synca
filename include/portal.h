@@ -20,30 +20,30 @@
 
 namespace synca {
 
-struct Portal
-{
+struct Portal {
     Portal(mt::IScheduler& destination);
     ~Portal();
-    
+
 private:
     mt::IScheduler& source;
 };
 
 template<typename T>
-struct WithPortal : Scheduler
-{
-    struct Access : Portal
-    {
+struct WithPortal : Scheduler {
+    struct Access : Portal {
         Access(Scheduler& s) : Portal(s) {}
-        T* operator->()             { return &single<T>(); }
+        T* operator->()             {
+            return &single<T>();
+        }
     };
-    
-    Access operator->()             { return *this; }
+
+    Access operator->()             {
+        return *this;
+    }
 };
 
 template<typename T>
-WithPortal<T>& portal()
-{
+WithPortal<T>& portal() {
     return single<WithPortal<T>>();
 }
 

@@ -21,10 +21,8 @@
 
 namespace synca {
 
-std::string statusToString(EventStatus s)
-{
-    switch (s)
-    {
+std::string statusToString(EventStatus s) {
+    switch (s) {
     case ES_NORMAL:
         return "Normal";
 
@@ -41,38 +39,31 @@ std::string statusToString(EventStatus s)
 
 EventException::EventException(EventStatus s) :
     std::runtime_error("Journey event received: " + statusToString(s)),
-    st(s)
-{
+    st(s) {
 }
 
-EventStatus EventException::status()
-{
+EventStatus EventException::status() {
     return st;
 }
 
-Goer::Goer() : state(std::make_shared<State>())
-{
+Goer::Goer() : state(std::make_shared<State>()) {
 }
 
-EventStatus Goer::reset()
-{
+EventStatus Goer::reset() {
     EventStatus s = state0().status;
     state0().status = ES_NORMAL;
     return s;
 }
 
-bool Goer::cancel()
-{
+bool Goer::cancel() {
     return setStatus0(ES_CANCELLED);
 }
 
-bool Goer::timedout()
-{
+bool Goer::timedout() {
     return setStatus0(ES_TIMEDOUT);
 }
 
-bool Goer::setStatus0(EventStatus s)
-{
+bool Goer::setStatus0(EventStatus s) {
     auto& ss = state0().status;
     if (ss != ES_NORMAL)
         return false;
@@ -80,8 +71,7 @@ bool Goer::setStatus0(EventStatus s)
     return true;
 }
 
-Goer::State& Goer::state0()
-{
+Goer::State& Goer::state0() {
     State* s = state.get();
     VERIFY(s != nullptr, "Goer state is null");
     return *s;

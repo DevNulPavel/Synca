@@ -43,23 +43,21 @@ void defer(Handler handler);
 void deferProceed(ProceedHandler proceed);
 void goWait(std::initializer_list<Handler> handlers);
 
-struct EventsGuard
-{
+struct EventsGuard {
     EventsGuard();
     ~EventsGuard();
 };
 
-struct Waiter
-{
+struct Waiter {
     Waiter();
     ~Waiter();
-    
+
     Waiter& go(Handler h);
     void wait();
-    
+
 private:
     void init0();
-    
+
     Handler proceed;
     std::shared_ptr<Waiter> proceeder;
 };
@@ -67,25 +65,21 @@ private:
 size_t goAnyWait(std::initializer_list<Handler> handlers);
 
 template<typename T_result>
-boost::optional<T_result> goAnyResult(std::initializer_list<std::function<boost::optional<T_result>()>> handlers)
-{
+boost::optional<T_result> goAnyResult(std::initializer_list<std::function<boost::optional<T_result>()>> handlers) {
     typedef boost::optional<T_result> Result;
     typedef std::function<void(Result&&)> ResultHandler;
-    
-    struct Counter
-    {
+
+    struct Counter {
         Counter(ResultHandler proceed_) : proceed(std::move(proceed_)) {}
-        ~Counter()
-        {
+        ~Counter() {
             tryProceed(Result());
         }
-        
-        void tryProceed(Result&& result)
-        {
+
+        void tryProceed(Result&& result) {
             if (++ counter == 1)
                 proceed(std::move(result));
         }
-        
+
     private:
         Atomic<int> counter;
         ResultHandler proceed;
@@ -98,8 +92,7 @@ boost::optional<T_result> goAnyResult(std::initializer_list<std::function<boost:
             result = std::move(res);
             proceed();
         });
-        for (const auto& handler: handlers)
-        {
+        for (const auto& handler: handlers) {
             go([counter, &handler] {
                 Result result = handler();
                 if (result)
@@ -110,8 +103,7 @@ boost::optional<T_result> goAnyResult(std::initializer_list<std::function<boost:
     return result;
 }
 
-struct Alone : mt::IScheduler
-{
+struct Alone : mt::IScheduler {
     Alone(mt::IService& service, const char* name = "alone");
 
     void schedule(Handler handler);
@@ -123,38 +115,34 @@ private:
 };
 
 struct TimeoutTag;
-struct Timeout
-{
+struct Timeout {
     Timeout(int ms);
     ~Timeout();
-    
+
 private:
     boost::asio::deadline_timer timer;
 };
 
-struct Service
-{
+struct Service {
     Service() : service(nullptr) {}
-    
+
     void attach(mt::IService&);
     void detach();
-    
+
     operator mt::IoService&() const;
-    
+
 private:
     mt::IoService* service;
 };
 
 template<typename T_tag>
-Service& service()
-{
+Service& service() {
     return single<Service, T_tag>();
 }
 
-struct Scheduler
-{
+struct Scheduler {
     Scheduler();
-    
+
     void attach(mt::IScheduler& s);
     void detach();
 
@@ -167,8 +155,7 @@ private:
 struct DefaultTag;
 
 template<typename T_tag>
-Scheduler& scheduler()
-{
+Scheduler& scheduler() {
     return single<Scheduler, T_tag>();
 }
 

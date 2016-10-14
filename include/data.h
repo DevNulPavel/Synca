@@ -22,31 +22,29 @@ namespace synca {
 namespace data {
 
 template<typename T_channel>
-void closeAndWait(mt::ThreadPool& tp, T_channel& c)
-{
+void closeAndWait(mt::ThreadPool& tp, T_channel& c) {
     tp.wait();
     c.close();
     tp.wait();
 }
 
 template<typename T>
-struct Closer
-{
+struct Closer {
     Closer(T& t_) : t(t_) {}
-    ~Closer()             { t.close(); }
+    ~Closer()             {
+        t.close();
+    }
 private:
     T& t;
 };
 
 template<typename T>
-Closer<T> closer(T& t)
-{
+Closer<T> closer(T& t) {
     return {t};
 }
 
 template<typename T_src, typename T_dst, typename F_pipe>
-void piping(T_src& s, T_dst& d, F_pipe f, int n = 1)
-{
+void piping(T_src& s, T_dst& d, F_pipe f, int n = 1) {
     goN(n, [&s, &d, f] {
         auto c = closer(d);
         f(s, d);
@@ -54,17 +52,12 @@ void piping(T_src& s, T_dst& d, F_pipe f, int n = 1)
 }
 
 template<typename T_src, typename T_dst, typename F_pipe>
-void piping1toMany(T_src& s, T_dst& d, F_pipe f, int n = 1)
-{
+void piping1toMany(T_src& s, T_dst& d, F_pipe f, int n = 1) {
     piping(s, d, [f] (T_src& s, T_dst& d) {
-        for (auto&& v: s)
-        {
-            try
-            {
+        for (auto&& v: s) {
+            try {
                 f(v, d);
-            }
-            catch (std::exception& e)
-            {
+            } catch (std::exception& e) {
                 RJLOG("Error: " << e.what());
             }
         }
@@ -72,17 +65,12 @@ void piping1toMany(T_src& s, T_dst& d, F_pipe f, int n = 1)
 }
 
 template<typename T_src, typename T_dst, typename F_pipe>
-void piping1to1(T_src& s, T_dst& d, F_pipe f, int n = 1)
-{
+void piping1to1(T_src& s, T_dst& d, F_pipe f, int n = 1) {
     piping(s, d, [f] (T_src& s, T_dst& d) {
-        for (auto&& v: s)
-        {
-            try
-            {
+        for (auto&& v: s) {
+            try {
                 d.put(std::move(f(v)));
-            }
-            catch (std::exception& e)
-            {
+            } catch (std::exception& e) {
                 RJLOG("Error: " << e.what());
             }
         }
@@ -90,23 +78,19 @@ void piping1to1(T_src& s, T_dst& d, F_pipe f, int n = 1)
 }
 
 template<typename T_src, typename T_dst, typename F_pipe>
-void piping1to01(T_src& s, T_dst& d, F_pipe f, int n = 1)
-{
+void piping1to01(T_src& s, T_dst& d, F_pipe f, int n = 1) {
     piping(s, d, [f] (T_src& s, T_dst& d) {
-        for (auto&& v: s)
-        {
-            try
-            {
+        for (auto&& v: s) {
+            try {
                 auto&& r = f(v);
                 if (!isEmpty(r))
                     d.put(std::move(r));
-            }
-            catch (std::exception& e)
-            {
+            } catch (std::exception& e) {
                 RJLOG("Error: " << e.what());
             }
         }
     }, n);
 }
 
-}}
+}
+}

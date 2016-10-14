@@ -24,65 +24,55 @@ namespace synca {
 
 typedef boost::system::error_code Error;
 
-int index()
-{
+int index() {
     return journey().index();
 }
 
-Goer go(Handler handler, mt::IScheduler& scheduler)
-{
+Goer go(Handler handler, mt::IScheduler& scheduler) {
     return Journey::create(std::move(handler), scheduler);
 }
 
-Goer go(Handler handler)
-{
+Goer go(Handler handler) {
     return Journey::create(std::move(handler), scheduler<DefaultTag>());
 }
 
-void goN(int n, Handler h)
-{
+void goN(int n, Handler h) {
     go(n == 1 ? h : [n, h] {
         for (int i = 0; i < n; ++ i)
             go(h);
     });
 }
 
-void teleport(mt::IScheduler& scheduler)
-{
+void teleport(mt::IScheduler& scheduler) {
     journey().teleport(scheduler);
 }
 
-void handleEvents()
-{
+void handleEvents() {
     journey().handleEvents();
 }
 
-void disableEvents()
-{
+void disableEvents() {
     journey().disableEvents();
 }
 
-void enableEvents()
-{
+void enableEvents() {
     journey().enableEvents();
 }
 
-void defer(Handler handler)
-{
+void defer(Handler handler) {
     journey().defer(handler);
 }
 
-void deferProceed(ProceedHandler proceed)
-{
+void deferProceed(ProceedHandler proceed) {
     journey().deferProceed(proceed);
 }
 
-void goWait(std::initializer_list<Handler> handlers)
-{
+void goWait(std::initializer_list<Handler> handlers) {
     deferProceed([&handlers](Handler proceed) {
-        std::shared_ptr<void> proceeder(nullptr, [proceed](void*) { proceed(); });
-        for (const auto& handler: handlers)
-        {
+        std::shared_ptr<void> proceeder(nullptr, [proceed](void*) {
+            proceed();
+        });
+        for (const auto& handler: handlers) {
             go([proceeder, &handler] {
                 handler();
             });
@@ -90,38 +80,31 @@ void goWait(std::initializer_list<Handler> handlers)
     });
 }
 
-EventsGuard::EventsGuard()
-{
+EventsGuard::EventsGuard() {
     disableEvents();
 }
 
-EventsGuard::~EventsGuard()
-{
+EventsGuard::~EventsGuard() {
     enableEvents();
 }
 
-Waiter::Waiter()
-{
+Waiter::Waiter() {
     proceed = journey().proceedHandler();
     init0();
 }
 
-Waiter::~Waiter()
-{
+Waiter::~Waiter() {
     proceed = nullptr; // to avoid unnecessary proceeding
 }
 
-Waiter& Waiter::go(Handler handler)
-{
+Waiter& Waiter::go(Handler handler) {
     auto& holder = proceeder;
     synca::go([holder, handler] { handler(); });
     return *this;
 }
 
-void Waiter::wait()
-{
-    if (proceeder.unique())
-    {
+void Waiter::wait() {
+    if (proceeder.unique()) {
         JLOG("everything done, nothing to do");
         return;
     }
@@ -131,31 +114,26 @@ void Waiter::wait()
     init0();
 }
 
-void Waiter::init0()
-{
+void Waiter::init0() {
     proceeder.reset(this, [](Waiter* w) {
-        if (w->proceed != nullptr)
-        {
+        if (w->proceed != nullptr) {
             TLOG("wait completed, proceeding");
             w->proceed();
         }
     });
 }
 
-size_t goAnyWait(std::initializer_list<Handler> handlers)
-{
+size_t goAnyWait(std::initializer_list<Handler> handlers) {
     VERIFY(handlers.size() >= 1, "Handlers amount must be positive");
 
     size_t index = static_cast<size_t>(-1);
     deferProceed([&handlers, &index](Handler proceed) {
         std::shared_ptr<Atomic<int>> counter = std::make_shared<Atomic<int>>();
         size_t i = 0;
-        for (const auto& handler: handlers)
-        {
+        for (const auto& handler: handlers) {
             go([counter, proceed, &handler, i, &index] {
                 handler();
-                if (++ *counter == 1)
-                {
+                if (++ *counter == 1) {
                     index = i;
                     proceed();
                 }
@@ -168,23 +146,19 @@ size_t goAnyWait(std::initializer_list<Handler> handlers)
 }
 
 Alone::Alone(mt::IService& service, const char* name) :
-    strand(service.ioService()), strandName(name)
-{
+    strand(service.ioService()), strandName(name) {
 }
 
-void Alone::schedule(Handler handler)
-{
+void Alone::schedule(Handler handler) {
     strand.post(std::move(handler));
 }
 
-const char* Alone::name() const
-{
+const char* Alone::name() const {
     return strandName;
 }
 
 Timeout::Timeout(int ms) :
-    timer(service<TimeoutTag>(), boost::posix_time::milliseconds(ms))
-{
+    timer(service<TimeoutTag>(), boost::posix_time::milliseconds(ms)) {
     Goer goer = journey().goer();
     timer.async_wait([goer](const Error& error) mutable {
         if (!error)
@@ -192,44 +166,36 @@ Timeout::Timeout(int ms) :
     });
 }
 
-Timeout::~Timeout()
-{
+Timeout::~Timeout() {
     timer.cancel_one();
     handleEvents();
 }
 
-void Service::attach(mt::IService& s)
-{
+void Service::attach(mt::IService& s) {
     service = &s.ioService();
 }
 
-void Service::detach()
-{
+void Service::detach() {
     service = nullptr;
 }
 
-Service::operator mt::IoService&() const
-{
+Service::operator mt::IoService&() const {
     VERIFY(service != nullptr, "Service is not attached");
     return *service;
 }
 
-Scheduler::Scheduler() : scheduler(nullptr)
-{
+Scheduler::Scheduler() : scheduler(nullptr) {
 }
 
-void Scheduler::attach(mt::IScheduler& s)
-{
+void Scheduler::attach(mt::IScheduler& s) {
     scheduler = &s;
 }
 
-void Scheduler::detach()
-{
+void Scheduler::detach() {
     scheduler = nullptr;
 }
 
-Scheduler::operator mt::IScheduler&() const
-{
+Scheduler::operator mt::IScheduler&() const {
     VERIFY(scheduler != nullptr, "Scheduler is not attached");
     return *scheduler;
 }

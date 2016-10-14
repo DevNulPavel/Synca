@@ -35,23 +35,22 @@ void yield();
 bool isInsideCoro();
 
 // сопрограмма
-struct Coro
-{
+struct Coro {
     friend void yield();
-    
+
     Coro();
-    
+
     // create and start coroutine
     Coro(Handler);
-    
+
     ~Coro();
-    
+
     // start coroutine using handler
     void start(Handler);
 
     // continue coroutine execution after yield
     void resume();
-    
+
     // is coroutine was started and not completed
     bool isStarted() const;
 

@@ -28,48 +28,40 @@ struct JourneyCreateTag;
 struct JourneyDestroyTag;
 
 Journey::Journey(mt::IScheduler& s) :
-    eventsAllowed(true), sched(&s), indx(++ atomic<JourneyCreateTag>())
-{
+    eventsAllowed(true), sched(&s), indx(++ atomic<JourneyCreateTag>()) {
 }
 
-Journey::~Journey()
-{
+Journey::~Journey() {
     ++ atomic<JourneyDestroyTag>();
 }
 
-void Journey::proceed()
-{
+void Journey::proceed() {
     schedule0([this] {
         proceed0();
     });
 }
 
-Handler Journey::proceedHandler()
-{
+Handler Journey::proceedHandler() {
     return [this] {
         proceed();
     };
 }
 
-void Journey::defer(Handler handler)
-{
+void Journey::defer(Handler handler) {
     handleEvents();
     deferHandler = handler;
     coro::yield();
     handleEvents();
 }
 
-void Journey::deferProceed(ProceedHandler proceed)
-{
+void Journey::deferProceed(ProceedHandler proceed) {
     defer([this, proceed] {
         proceed(proceedHandler());
     });
 }
 
-void Journey::teleport(mt::IScheduler& s)
-{
-    if (&s == sched)
-    {
+void Journey::teleport(mt::IScheduler& s) {
+    if (&s == sched) {
         JLOG("the same destination, skipping teleport <-> " << s.name());
         return;
     }
@@ -78,8 +70,7 @@ void Journey::teleport(mt::IScheduler& s)
     defer(proceedHandler());
 }
 
-void Journey::handleEvents()
-{
+void Journey::handleEvents() {
     if (!eventsAllowed || std::uncaught_exception())
         return;
     auto s = gr.reset();
@@ -88,40 +79,33 @@ void Journey::handleEvents()
     throw EventException(s);
 }
 
-void Journey::disableEvents()
-{
+void Journey::disableEvents() {
     handleEvents();
     eventsAllowed = false;
 }
 
-void Journey::enableEvents()
-{
+void Journey::enableEvents() {
     eventsAllowed = true;
     handleEvents();
 }
 
-mt::IScheduler& Journey::scheduler() const
-{
+mt::IScheduler& Journey::scheduler() const {
     return *sched;
 }
 
-int Journey::index() const
-{
+int Journey::index() const {
     return indx;
 }
 
-Goer Journey::goer() const
-{
+Goer Journey::goer() const {
     return gr;
 }
 
-Goer Journey::create(Handler handler, mt::IScheduler& s)
-{
+Goer Journey::create(Handler handler, mt::IScheduler& s) {
     return (new Journey(s))->start0(std::move(handler));
 }
 
-Goer Journey::start0(Handler handler)
-{
+Goer Journey::start0(Handler handler) {
     Goer gr = goer();
     schedule0([handler, this] {
         guardedCoro0()->start([handler] {
@@ -129,9 +113,7 @@ Goer Journey::start0(Handler handler)
             try
             {
                 handler();
-            }
-            catch (std::exception& e)
-            {
+            } catch (std::exception& e) {
                 (void) e;
                 JLOG("exception in coro: " << e.what());
             }
@@ -141,35 +123,27 @@ Goer Journey::start0(Handler handler)
     return gr;
 }
 
-void Journey::schedule0(Handler handler)
-{
+void Journey::schedule0(Handler handler) {
     VERIFY(sched != nullptr, "Scheduler must be set in journey");
     sched->schedule(std::move(handler));
 }
 
-Journey::CoroGuard Journey::guardedCoro0()
-{
+Journey::CoroGuard Journey::guardedCoro0() {
     return CoroGuard(*this);
 }
 
-void Journey::proceed0()
-{
+void Journey::proceed0() {
     guardedCoro0()->resume();
 }
 
-void Journey::onEnter0()
-{
+void Journey::onEnter0() {
     t_journey = this;
 }
 
-void Journey::onExit0()
-{
-    if (deferHandler == nullptr)
-    {
+void Journey::onExit0() {
+    if (deferHandler == nullptr) {
         delete this;
-    }
-    else
-    {
+    } else {
         Handler handler = std::move(deferHandler);
         deferHandler = nullptr;
         handler();
@@ -177,14 +151,12 @@ void Journey::onExit0()
     t_journey = nullptr;
 }
 
-Journey& journey()
-{
+Journey& journey() {
     VERIFY(t_journey != nullptr, "There is no current journey executed");
     return *t_journey;
 }
 
-void waitForAll()
-{
+void waitForAll() {
     TLOG("waiting for journeys to complete");
     WAIT_FOR(atomic<JourneyCreateTag>() == atomic<JourneyDestroyTag>());
     TLOG("waiting for journeys completed");
@@ -192,8 +164,7 @@ void waitForAll()
 
 }
 
-GC& gc()
-{
+GC& gc() {
     return synca::journey().gc;
 }
 
