@@ -29,7 +29,9 @@ struct JourneyDestroyTag;
 
 
 Journey::Journey(mt::IScheduler& s) :
-    eventsAllowed(true), sched(&s), indx(++ atomic<JourneyCreateTag>()) {
+    eventsAllowed(true),
+    sched(&s),
+    indx(++ atomic<JourneyCreateTag>()) {
 }
 
 Journey::~Journey() {
@@ -56,9 +58,11 @@ void Journey::defer(Handler handler) {
 }
 
 void Journey::deferProceed(ProceedHandler proceed) {
-    defer([this, proceed] {
-        proceed(proceedHandler());
-    });
+    Handler localHandler = [this, proceed] {
+        Handler proceedHandlerFunc = proceedHandler();
+        proceed(proceedHandlerFunc);
+    };
+    defer(localHandler);
 }
 
 void Journey::teleport(mt::IScheduler& s) {
@@ -106,10 +110,11 @@ Goer Journey::create(Handler handler, mt::IScheduler& s) {
     return (new Journey(s))->start0(std::move(handler));
 }
 
+// запуск задачи
 Goer Journey::start0(Handler handler) {
     Goer gr = goer();
-    schedule0([handler, this] {
-        guardedCoro0()->start([handler] {
+    Handler handlerWarpper = [handler, this] {
+        Handler localHandler = [handler] {
             JLOG("started");
             try
             {
@@ -119,8 +124,11 @@ Goer Journey::start0(Handler handler) {
                 JLOG("exception in coro: " << e.what());
             }
             JLOG("ended");
-        });
-    });
+        };
+
+        guardedCoro0()->start(localHandler);
+    };
+    schedule0(handlerWarpper);
     return gr;
 }
 
