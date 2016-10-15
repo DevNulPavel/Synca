@@ -22,6 +22,7 @@ namespace synca {
 
 Portal::Portal(mt::IScheduler& destination) :
     source(journey().scheduler()) {
+
     JLOG("creating portal " << source.name() << " <=> " << destination.name());
     teleport(destination);
 }

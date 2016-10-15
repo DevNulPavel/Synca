@@ -58,6 +58,7 @@ project/tools/packs/pathConfig.pyc
 
 # Qt Creator
 *.creator.user
+*.user
 mhouse_xgen.config
 mhouse_xgen.creator
 mhouse_xgen.includes

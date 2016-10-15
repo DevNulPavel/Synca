@@ -165,8 +165,8 @@ StrPair loadContent(const StrPair& url)
     auto&& path = url.second;
     JLOG("loading url: " << host << ", " << path);
     Resolver r;
-    Resolver::EndPoints ends = r.resolve(host, 80);
-    VERIFY(ends != Resolver::EndPoints(), "Cannot resolve hostname: " + host);
+    EndPoints ends = r.resolve(host, 80);
+    VERIFY(ends != EndPoints(), "Cannot resolve hostname: " + host);
     Socket s;
     s.connect(*ends);
     Str req =

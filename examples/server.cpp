@@ -28,13 +28,6 @@ using namespace mt;
 using namespace synca;
 using namespace synca::net;
 
-struct ChatUser;
-
-
-std::mutex mutex;
-std::unordered_map<Socket*, ChatUser> chatMap;
-
-
 enum class State{
     NO_NAME = 0,
     WITH_NAME = 1
@@ -49,6 +42,11 @@ struct ChatUser{
         state = State::NO_NAME;
     }
 };
+
+
+std::mutex mutex;
+std::unordered_map<Socket*, ChatUser> chatMap;
+
 
 struct TimeoutSocketTag;
 struct TimeoutSocket {
