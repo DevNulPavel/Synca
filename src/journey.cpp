@@ -115,7 +115,7 @@ Goer Journey::start0(Handler handler) {
     Goer gr = goer();
     Handler handlerWarpper = [handler, this] {
         Handler localHandler = [handler] {
-            JLOG("started");
+            //JLOG("started");
             try
             {
                 handler();
@@ -123,7 +123,7 @@ Goer Journey::start0(Handler handler) {
                 (void) e;
                 JLOG("exception in coro: " << e.what());
             }
-            JLOG("ended");
+            //JLOG("ended");
         };
 
         guardedCoro0()->start(localHandler);

@@ -200,13 +200,64 @@ void serve(int port)
     go(handler, net);
 }
 
+void echo(int port)
+{
+    ThreadPool net(4, "net");
+    
+    service<NetworkTag>().attach(net);
+    service<TimeoutSocketTag>().attach(net);
+    scheduler<DefaultTag>().attach(net);
+    
+    Handler handler = [port] {
+        enableEvents();
+        
+        // создаем приемник соединений
+        Acceptor acceptor(port);
+        
+        // ожидаем подключения
+        while (true){
+            SocketHandler socketHandler = [](const std::weak_ptr<Socket>& socket) {
+                Socket* socketPtr = nullptr;
+                if (socket.expired() == false) {
+                    socketPtr = socket.lock().get();
+                }
+                
+                // читаем пока не завершится или не закончится буффер
+                Buffer message(64, 0);
+                {
+                    TimeoutSocket t(5000, [socketPtr](){
+                        // закрываем сокет по таймауту
+                        socketPtr->close();
+                    });
+                    socketPtr->readUntil(message, Buffer("\n"));
+                }
+                
+                // Пишем
+                {
+                    TimeoutSocket t(5000, [socketPtr](){
+                        // закрываем сокет по таймауту
+                        socketPtr->close();
+                    });
+                    socketPtr->write(message);
+                }
+                
+                socketPtr->close();
+            };
+            
+            // Работа непосредственно с открытым соединением
+            acceptor.goAccept(socketHandler);
+        }
+    };
+    go(handler, net);
+}
+
 }
 
 int main(int argc, char* argv[])
 {
     try
     {
-        server::serve(8800);
+        server::echo(8800);
     }
     catch (std::exception& e)
     {
